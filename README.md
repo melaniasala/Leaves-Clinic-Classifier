@@ -2,11 +2,11 @@
 
 ## Overview
 
-This project is the first challenge of the course "Artificial Neural Networks and Deep Learning" at Politecnico di Milano for the academic year 2023-2024. The objective is to classify images of vertical farm leaves based on their health status using a deep learning approach. The model achieved outstanding results, demonstrating an accuracy of 94.00% and 92.70% on the preliminary and final test sets, respectively. This performance underscores the strong robustness and efficiency of our augmentation strategies, showcasing the model's excellent generalization capabilities. Notably, our team secured the first position among more than 150 teams, surpassing others by a significant margin of 2%.
+This project is the first challenge of the course "Artificial Neural Networks and Deep Learning" at Politecnico di Milano for the academic year 2023-2024. The goal was to classify images of vertical farm leaves based on their health status using a deep learning approach. The model achieved great results, with an accuracy of 94.00% and 92.70% on the preliminary and final test sets, respectively. This performance proves the strong robustness and efficiency of our augmentation strategies, showing the model's excellent generalization capabilities. In particular, our team secured the first position among more than 150 teams, surpassing others by a margin of 2%.
 
 ## Dataset
 
-The dataset used for this project can be found [here](https://drive.google.com/file/d/1llWCmIbaW-uHvZcD-soT8DJQJYmm8zAA/view?usp=drive_link). Please make sure to download and reference it appropriately.
+The dataset used for this project can be found [here](https://drive.google.com/file/d/1llWCmIbaW-uHvZcD-soT8DJQJYmm8zAA/view?usp=drive_link).
 
 ## Table of Contents
 
@@ -37,7 +37,7 @@ Various ImageNet pre-trained architectures were evaluated, with the ConvNeXt fam
 
 ### Fine-Tuning
 
-The pre-trained model was fine-tuned by unfreezing the first half of the convolutional network, progressively unfreezing more layers. This process significantly improved accuracy on the validation set with respect to the Transfer Learning only.
+The pre-trained model was fine-tuned by unfreezing the first half of the convolutional network, progressively unfreezing more layers. This process significantly improved accuracy on the validation set with respect to transfer learning only.
 
 ## Learning Rate Scheduler and Optimizer
 
@@ -45,11 +45,11 @@ An in-depth analysis of optimizers (Adam, AdamW, Experimental SGD, Lion) and a d
 
 ## Augmentation
 
-To enhance generalization, RandAugment, a preprocessing layer of KerasCV, coupled with some other geometric augmentation, were applied. Test Time Augmentation (TTA) with 11 geometric transformations was employed during model evaluation.
+To strengthen generalization, RandAugment, a preprocessing layer of KerasCV, coupled with some other geometric augmentation, were applied. Test Time Augmentation (TTA) with 11 geometric transformations was employed during model predictions.
 
 ## Performance Assessment and Further Optimization
 
-The ROC curve analysis led to the identification of an optimal threshold, enhancing the model's ability to distinguish between healthy and unhealthy leaves.
+The ROC curve analysis led to the identification of an optimal threshold, improving the model's ability to distinguish between healthy and unhealthy leaves.
 
 ## Files in the Repository
 
